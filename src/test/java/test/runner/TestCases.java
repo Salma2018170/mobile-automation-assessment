@@ -1,6 +1,7 @@
 package test.runner;
 
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.InteractsWithApps;
 import io.appium.java_client.android.AndroidDriver;
 import jdk.jfr.Description;
 import org.openqa.selenium.WebElement;
@@ -43,7 +44,7 @@ public class TestCases {
          * un-commit the below statement
          * then fix the error
          */
-   //        ((InteractsWithApps) driver).terminateApp();
+       ((InteractsWithApps) driver).terminateApp("com.swaglabsmobileapp");
     }
 
   //
